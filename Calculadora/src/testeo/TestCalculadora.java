@@ -59,6 +59,12 @@ public class TesteoCalculadora
         assertNotEquals(calculadora.Division(100, 50), 5);
     }
 
+    @Test
+    public void DivisionTest3()
+	{
+        assertEquals(calculadora.Division(2, 0), null);
+    }
+	
     @Test	
     public void  CuadraticaTest1()
 	{
