@@ -1,0 +1,77 @@
+package testeo;
+
+        import code.Calculadora;
+        import org.junit.Test;
+        import java.sql.Array;
+        import static org.junit.Assert.*;
+
+public class TesteoCalculadora 
+{
+    Calculadora calculadora = new Calculadora();
+
+
+    @Test
+    public void sumaTest(){
+		
+        assertEquals(calculadora.sumar(15, 15), 30);
+    }
+	
+    @Test
+    public void sumaTest2()
+	{
+        assertNotEqualsEquals(calculadora.sumar(2, -5), 0);
+    }
+	
+    @Test
+    public void restaTest()
+	{
+        assertEquals(calculadora.restar(2, 10), -8);
+    }
+
+    @Test
+    public void restaTest2()
+	{
+        assertNotEquals(calculadora.restar(2, 2), 2);
+    }
+
+    @Test
+    public void Multiplicacion1()
+	{
+        assertEquals(calculadora.multiplicacion(2, 2), 4);
+    }
+
+    @Test
+    public void Multiplicacion2()
+	{
+        assertNotEquals(calculadora.multiplicacion(3, 2), 0);
+    }
+
+    @Test
+    public void DivisionTest()
+	
+	{
+        assertEquals(calculadora.Division(3, 3), 1);
+    }
+
+    @Test
+    public void DivisionTest2()
+	{
+        assertNotEquals(calculadora.Division(100, 50), 5);
+    }
+
+    @Test	
+    public void  CuadraticaTest1()
+	{
+		assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(1,-5,6)}),2,3);
+	}	
+	
+	@Test	
+    public void  CuadraticaTest2()
+	{
+		assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(6,5,4)}),3,3);
+	}	
+
+}
+
+
+
