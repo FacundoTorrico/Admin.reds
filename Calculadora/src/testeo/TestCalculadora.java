@@ -62,8 +62,20 @@ public class TesteoCalculadora
     @Test
     public void DivisionTest3()
 	{
-        assertEquals(calculadora.Division(2, 0), null);
+        assertEquals(calculadora.Division(2, 0), 0);
     }
+	
+    @Test
+    public void DivisionTest4()
+	{
+        assertEquals(calculadora.Division(0, 100), 0);
+    }
+	
+    @Test (expected = ArithmeticException.class)
+    public void divisionTestExcep()
+    	{
+    	calculator.dividir(2,0);
+    	}
 	
     @Test	
     public void  CuadraticaTest1()
