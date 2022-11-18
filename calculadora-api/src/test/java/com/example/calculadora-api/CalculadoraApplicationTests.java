@@ -60,12 +60,20 @@ class CalculadoraApplicationTests
 	public void division()
 	{
 		assertEquals(Calculadora.division(2,2),1);
-		assertEquals(Calculadora.division(-2,2),-1);
-		assertEquals(Calculadora.division(-2,-2),1);
 	}
+	@Test
+	public void division2()
+	{
+		assertEquals(Calculadora.division(-2,2),-1);
+	}
+	@Test
+	public void division3()
+	{
+		assertEquals(Calculadora.division(-2,-2),1);
+	}	
 	
 	@Test 
-	public void division2()
+	public void division4()
 	{
 		assertNotEquals(Calculadora.division(2,2),9);
 	}
