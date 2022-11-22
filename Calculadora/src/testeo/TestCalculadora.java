@@ -83,11 +83,28 @@ public class TesteoCalculadora
 		assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(1,-5,6)}),2,3);
 	}	
 	
-	@Test	
+    @Test	
     public void  CuadraticaTest2()
 	{
 		assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(6,5,4)}),3,3);
 	}	
+	
+    @Test
+    public void cuadraticaTest3() 
+	{
+    		double result[] = {1, -5};
+    		assertArrayEquals(calculadora.Funcioncuadratica(1, 4, (-5)), result, 0);
+ 	}
+ 
+    @Test
+    public void cuaTestM() 
+    	{
+  		double var = 991;
+  		double var2 = 9;
+		double result[] = {var, var2};
+		assertArrayEquals(calculadora.Funcioncuadratica(1, 4, (-5)), result, 990);
+	}
+	
 
 }
 
