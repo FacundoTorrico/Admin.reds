@@ -106,7 +106,7 @@ public class TesteoCalculadora
 	}
 	
     @Test
-    public void cuaTestM() 
+    public void cuaTestM2() 
     	{
   		double var = 0;
   		double var2 = 0;
