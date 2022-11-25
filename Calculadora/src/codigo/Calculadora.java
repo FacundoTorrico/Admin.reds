@@ -50,7 +50,7 @@ public class Calculadora {
                 return  result;
             }
      
-	 throw new ArithmeticException("a no puede ser 0");
+	 return 0;
 
     }
     
