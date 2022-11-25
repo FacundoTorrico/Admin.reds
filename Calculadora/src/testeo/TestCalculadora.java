@@ -102,8 +102,18 @@ public class TesteoCalculadora
   		double var = 991;
   		double var2 = 9;
 		double result[] = {var, var2};
-		assertArrayEquals(calculadora.Funcioncuadratica(1, 4, (-5)), result, 990);
+		assertArrayEquals(calculadora.Funcioncuadratica(1, 4, (-5)), result, 991);
 	}
+	
+    @Test
+    public void cuaTestM() 
+    	{
+  		double var = 0;
+  		double var2 = 0;
+		double result[] = {var, var2};
+		assertArrayEquals(calculadora.Funcioncuadratica(0, 4, (-5)), result, 0);
+	}
+	
 	
 
 }
