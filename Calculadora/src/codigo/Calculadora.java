@@ -32,26 +32,17 @@ public class Calculadora {
         }
         return resultado;
     }
-	
-    public static float[] FuncionCuadratica(float a, float b, float c)
-	{       
-        float b2 = b*b;
-        float dentroraiz = b2 - (4*a*c);
-        float raiz = (float) Math.sqrt(dentroraiz);
-        float cuenta = (float)raiz;
-        float verificacion =cuenta;
-            if (verificacion % 2 ==0)
-            {
-                float primero = ((-b + raiz)/2*a);
-                float segundo = ((-b  - raiz)/2*a);
-
-                float [] result = {primero, segundo};
-
-                return  result;
-            }
-     
-	 return 0;
+	   
+	    public double[] FuncionCuadratica(double a, double b, double c) 
+	    {
+        	double x1 = (-b + Math.sqrt((b * b) - (4 * a * c))) / (2 * a);
+        	double x2 = (-b - Math.sqrt((b * b) - (4 * a * c))) / (2 * a);
+        	double[] results = {x1, x2};
+        	return results;
+    	    }
+	//cambio la cuadrática porque la otra tiene un final al que nunca llegará
 
     }
+	
     
 }
