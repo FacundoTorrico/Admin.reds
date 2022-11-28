@@ -108,13 +108,9 @@ public class TesteoCalculadora
 	
     @Test (expected = ArithmeticException.class)
     public void CuadraticaTestExcep()
-    	{
-    		double var = null;
-  		double var2 = null;
-		double result[] = {var, var2};
-		assertArrayEquals(calculadora.Funcioncuadratica(0, 4, (-5)), result, null);
+    	{    		
+		assertArrayEquals(calculadora.Funcioncuadratica(0, 4, (-5));
     	}
-	// "a" no puede ser 0, de ser así dejaria de ser una función cuadrática
 
 }
 
